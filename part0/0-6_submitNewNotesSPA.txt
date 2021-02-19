@@ -1,0 +1,13 @@
+title Submit New Note SPA
+
+note over browser:
+browser fetches form element from the page and registers an event handler
+event handler bypasses default form submit, instead creates new note
+and adds note to the notes list. Then sends new note in post request
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server:
+form data sent to server address new_note_spa as JSON data
+server creates a new note object and adds it to the notes array
+end note
+server-->browser: Status code 201: new note created
